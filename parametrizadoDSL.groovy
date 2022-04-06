@@ -20,7 +20,7 @@ job('job-DSL-1'){
     shell("bash jobscript.sh")  
   }
   publishers{
-    mailer('aydinbdsalman@gmail.com', true, truee)
+    mailer('aydinbdsalman@gmail.com', true, true)
     slackNotifier{
       notifyAborted(true)
       notifyEveryFailure(true)
