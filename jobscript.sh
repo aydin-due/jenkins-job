@@ -1,11 +1,17 @@
 #!/bin/bash
-echo "Bienvenido/a al planeta $planeta"
-if [ "$agente" = "true" ]
-then
-	echo "Prepárese para la misión agente X, que la fuerza te acompañe."
-else
-	echo "Disfruta el planeta humano/a $nombre, trata de no morir."
-fi
-echo "..."
-sleep 10
-echo "¡Suerte! La necesitarás."
+echo "***reproductor de musica***"
+contador=0
+while [ $auto_reproducir != false ]
+do
+	if [ $contador = 5 ]
+    then
+		echo "---esta fue la ultima cancion de la playlist---"
+        auto_reproducir=false
+     	sleep 5
+    else
+    	echo ">>> reproduciendo cancion de $artista" 
+    	sleep 5
+        contador=$(($contador+1))
+    fi
+done
+echo "***la playlist del genero: $genero se acabo, adios $usuario***"
