@@ -16,7 +16,7 @@ job('job-DSL-1') {
       githubPush()
     }
   	steps {
-      shell("bash jobscript.sh")
+      shell("jobscript.sh")
     }
     publishers {
       mailer('aydinbdsalman@gmail.com', true, true)
