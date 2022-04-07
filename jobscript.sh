@@ -1,6 +1,5 @@
 #!/bin/bash
 echo "***reproductor de musica***"
-contador=0
 while [ $auto_reproducir != false ]
 do
 	if [ $contador = 5 ]
