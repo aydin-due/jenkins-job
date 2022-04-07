@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "***reproductor de musica***"
+contador = 0
 while [ $auto_reproducir != false ]
 do
 	if [ $contador = 5 ]
@@ -11,6 +12,6 @@ do
     	echo ">>> reproduciendo cancion de $artista" 
     	sleep 5
         contador=$(($contador+1))
-    
+    	fi
 done
 echo "***la playlist del genero: $genero se acabo, adios $usuario***"
