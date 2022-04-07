@@ -11,6 +11,6 @@ do
     	echo ">>> reproduciendo cancion de $artista" 
     	sleep 5
         contador=$(($contador+1))
-    fi
+    
 done
 echo "***la playlist del genero: $genero se acabo, adios $usuario***"
